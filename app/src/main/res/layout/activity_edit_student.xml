@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    tools:context=".EditStudent">
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtName"
+        android:text="Edit Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@id/txtName"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAge"
+        android:text="Edit age"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/editName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAge"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_below="@id/txtAge"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCollege"
+        android:layout_below="@id/editAge"
+        android:text="Edit college"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:id="@+id/editCollege"
+        android:layout_below="@id/txtCollege"
+        android:singleLine="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhoneNum"
+        android:text="Edit Phone Number"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/editCollege"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPhoneNum"
+        android:inputType="number"
+        android:layout_below="@+id/txtPhoneNum"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/saveBtn"
+        android:layout_below="@id/editPhoneNum"
+        android:gravity="center"
+        android:layout_marginLeft="150dp"
+        android:onClick="onClicksave"
+        android:textSize="21dp"
+        android:backgroundTint="@color/skyBlue"
+        />-->
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButton"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickCancel"
+        android:tint="@color/black"
+        android:layout_marginLeft="17dp"
+        android:background="@color/transparent"
+        android:drawableTint="@color/black"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Student"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveText"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_check_24"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:drawableTint="@color/black"
+        android:onClick="onClicksave"
+        android:tint="@color/black"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_studentImage"
+        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/addButton"
+        android:layout_centerHorizontal="true"
+        >
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outerRelName"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/img_studentImage"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relnameIcon"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:background="@color/white"
+                android:backgroundTint="#00000000"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relName"
+            android:layout_toRightOf="@+id/relnameIcon"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="Name"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Student name"
+                android:layout_below="@+id/name"
+                android:id="@+id/editName"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/ic_baseline_edit_24"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outerRelCollege"
+        android:layout_below="@+id/outerRelName"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relCollegeIcon"
+
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_school_black_24dp"
+                android:background="@color/white"
+                android:backgroundTint="#00000000"
+                android:tint="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relCollege"
+            android:layout_toRightOf="@+id/relCollegeIcon"
+            android:layout_below="@id/relCollege"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/college"
+                android:text="college"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editCollege"
+                android:layout_below="@+id/college"
+                android:hint="Enter college name"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/ic_baseline_edit_24"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outerRelAge"
+        android:layout_below="@+id/outerRelCollege"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relAgeIcon"
+
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_cake_24"
+                android:background="@color/white"
+                android:backgroundTint="#00000000"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relAge"
+            android:layout_toRightOf="@+id/relAgeIcon"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age"
+
+                android:text="Age"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editAge"
+                android:hint="Enter students age"
+                android:layout_below="@+id/age"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/ic_baseline_edit_24"
+                android:inputType="number"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outerRelPhone"
+        android:layout_below="@+id/outerRelAge"
+        android:layout_marginTop="10dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relPhoneIcon"
+            >
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:background="@color/white"
+                android:backgroundTint="#00000000"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/colorPrimary"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relPhone"
+            android:layout_toRightOf="@+id/relPhoneIcon"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNum"
+                android:text="Phone Number "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPhonenum"
+                android:hint="Enter phone number"
+                android:layout_below="@+id/phoneNum"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/ic_baseline_edit_24"
+                android:inputType="number"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

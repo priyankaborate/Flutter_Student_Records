@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="skyBlue">#87CEEB</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="editTextBG">#FFF</color>
+    <color name="newsbackaround">#E0E0E0</color>
+    <color name="news">#03A9F4</color>
+    <color name="offernewstextColor">#FFF</color>
+    <color name="offer">#29AB87</color>
+    <color name="color_text_info">#d5d1ac</color>
+    <color name="textcolor">#303F9F</color>
+    <color name="saffron">#F1B136</color>
+    <color name="eggplant">#03A679</color>
+    <color name="sienna">#EB6460</color>
+    <color name="bluelight">#49acd5</color>
+    <color name="green">#45bc62</color>
+    <color name="orange">#eaad43</color>
+    <color name="phone">#c0e383</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="red">#F20F18</color>
+    <color name="colorRowSeparator">#CCCCCC</color>
+    <color name="colorThemeBackground">#60186B</color>
+    <color name="blue">#0000FF</color>
+    <color name="cornflowerblue">#6495ED</color>
+    <color name="lightblue">#ADD8E6</color>
+    <color name="powderblue">#B0E0E6</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="mediumslateblue">#7B68EE</color>
+    <color name="mediumblue">#0000CD</color>
+    <color name="iceblue">#cce0ff</color>
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+
+
+</resources>

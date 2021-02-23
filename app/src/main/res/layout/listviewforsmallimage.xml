@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/googleImgCard"
+        android:paddingRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        >
+        <!--android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel1"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel2"
+                android:layout_alignParentRight="true"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/ImgCard"
+                    android:paddingRight="10dp"
+                    >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/image"
+                    android:scaleType="fitXY"
+                    />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rel11"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :  "
+                android:textColor="#5F5B5B"
+                android:textStyle="bold"
+                android:id="@+id/nameHeading"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+          <!--  <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image"
+                android:text="name"
+                android:textColor="#5F5B5B"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="150dp"
+                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textName"
+                android:text="name"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/nameHeading"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ageHeading"
+                android:textColor="#000"
+                android:text="Age :  "
+                android:textSize="15dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/nameHeading"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textAge"
+                android:text="age"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/ageHeading"
+                android:layout_below="@+id/nameHeading"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textYear"
+                android:text="years"
+                android:textColor="#000"
+                android:textSize="15dp"
+
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/nameHeading"
+                android:layout_toRightOf="@+id/textAge"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobileNumHeading"
+                android:textColor="#000"
+                android:text="Phone : "
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textYear"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMobileNum"
+                android:text="mobileNum"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/mobileNumHeading"
+                android:layout_below="@+id/textYear"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/collegeHeading"
+                android:textColor="#000"
+                android:text="College Name :  "
+                android:textSize="15dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/mobileNumHeading"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCollege"
+                android:text="college"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/mobileNumHeading"
+                android:layout_toRightOf="@+id/collegeHeading"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1"
+
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgShare"
+                android:layout_toLeftOf="@+id/imgDots"
+                android:src="@drawable/ic_baseline_share_24"
+                android:background="@color/transparent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:id="@+id/imgDots"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"
+
+            />
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

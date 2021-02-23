@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_calltobusiness"
+        android:title="call"
+        android:icon="@drawable/ic_phone_black_24dp"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/menu_businessDetails"
+        android:title="Business Details"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share App"
+        app:showAsAction="never"
+        />
+
+
+
+    <item
+        android:id="@+id/menu_aboutapp"
+        android:title="About App"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_privacypolicy"
+        android:title="Privacy Policy"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_termsofservice"
+        android:title="Terms of Service"
+        app:showAsAction="never"
+        />
+
+
+</menu>
